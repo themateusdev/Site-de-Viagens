@@ -177,6 +177,67 @@ header li {
     margin-left: 10px;
 }
 
+.serviços {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.serviços h1 {
+    margin: 50px 0;
+    font-size: 1.5rem;
+}
+
+.serviçõs-elementos {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+
+.tour {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    font-size: .8rem;
+
+    padding: 10px;
+    margin: 0 90px;
+}
+
+.tour svg { 
+    width: 100px;
+    height: 200px;
+}
+
+.tour h2 { 
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.tour p { 
+    font-size: .8rem;
+    margin-bottom: 20px;
+}
+
+
+.tour button {
+    background: #1E4ED2;
+    color: white;
+
+    border: none;
+    border-radius: 1rem;
+
+    padding: 20px;
+    margin-top: 50px;
+}
+
 /* Responsividade */
 
 /* # Mobile */
@@ -214,6 +275,12 @@ header li {
         align-items: center;
         height: 100%;
     }
+
+    .serviçõs-elementos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* # Tablet */
@@ -242,6 +309,12 @@ header li {
         align-items: center;
         height: 100%;
     }
+
+    .serviçõs-elementos {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 /* # Desktop */
@@ -250,5 +323,29 @@ header li {
         flex-direction: column;
         align-items: center;
         height: 100%;
+    }
+}
+
+@media (max-width: 1170px) {
+    .tour {
+        margin: 0 10px;
+    }
+
+    .area-pacote {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .serviçõs-elementos {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1400px) {
+    .tour {
+        margin: 0 40px;
     }
 }
