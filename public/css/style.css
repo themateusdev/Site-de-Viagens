@@ -1,3 +1,14 @@
+/* map */
+
+#mapid { 
+    height: 600px; 
+    width: 900px;
+
+    border-radius: 1rem;
+}
+
+/* style */
+
 * {
     margin: 0;
     padding: 0;
@@ -238,6 +249,48 @@ header li {
     margin-top: 50px;
 }
 
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+
+    background: #DBDADA;
+}
+
+.entre-em-contato {
+    width: 500px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+
+    border-radius: 1rem;
+    
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.entre-em-contato ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.entre-em-contato ul li {
+    margin: 10px;
+}
+
+.entre-em-contato ul svg {
+    margin-right: 20px;
+}
+
 /* Responsividade */
 
 /* # Mobile */
@@ -281,10 +334,26 @@ header li {
         justify-content: center;
         align-items: center;
     }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mapid { 
+        height: 200px; 
+        width: 100%;
+
+        z-index: 99;
+    }
+
+
 }
 
 /* # Tablet */
-@media (max-width: 768px) {
+@media (max-width: 880px) {
 
     header nav ul {
         position: fixed;
@@ -297,11 +366,18 @@ header li {
         padding: 25px;
 
         background: white;
-        z-index: 99;
+        z-index: 100;
     }
 
     header nav li {
         color: black;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .area-pacote {
@@ -310,10 +386,37 @@ header li {
         height: 100%;
     }
 
+    .entre-em-contato {
+        width: 300px;
+        height: 250px;
+
+        font-size: .8rem;
+    }
+
     .serviçõs-elementos {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .serviçõs-elementos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mapid { 
+        height: 200px; 
+        width: 100%;
+
+        z-index: 99;
     }
 }
 
@@ -323,6 +426,10 @@ header li {
         flex-direction: column;
         align-items: center;
         height: 100%;
+    }
+
+    .entre-em-contato {
+        font-size: .7rem;
     }
 }
 
@@ -341,6 +448,10 @@ header li {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .entre-em-contato {
+        font-size: .7rem;
     }
 }
 

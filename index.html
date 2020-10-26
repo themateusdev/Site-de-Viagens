@@ -10,6 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+
 </head>
 
 <body>
@@ -36,7 +47,7 @@
     </header>
 
     <section class="pacote">
-        
+
         <h1>Conheça nossos pacotes</h1>
 
         <div class="area-pacote">
@@ -63,7 +74,7 @@
                     </ul>
                 </div>
             </div>
-    
+
             <div class="card">
                 <div class="tag-top">
                     <p>Promoção</p>
@@ -87,7 +98,7 @@
                     </ul>
                 </div>
             </div>
-    
+
             <div class="card">
                 <div class="tag-top">
                     <p>Promoção</p>
@@ -113,7 +124,7 @@
             </div>
         </div>
 
-        
+
     </section>
 
     <section class="serviços">
@@ -122,39 +133,73 @@
         <div class="serviçõs-elementos">
             <div class="tour">
                 <i data-feather="map"></i>
-    
+
                 <h2>Tours guiados</h2>
-                <p>Os tours guiados são passeios que são realizados com auxílio de um guia, que além de dar informações sobre o local e vai nos conduzir ao longo do trajeto</p>
-    
+                <p>Os tours guiados são passeios que são realizados com auxílio de um guia, que além de dar informações
+                    sobre o local e vai nos conduzir ao longo do trajeto</p>
+
                 <button>Saiba mais</button>
-    
+
             </div>
-    
+
             <div class="tour">
                 <i data-feather="camera"></i>
-    
+
                 <h2>Fotografia profissional</h2>
-                <p>ONossos fotógrafos estão acostumados a registrar os melhores momentos das viagens para que você aproveite e paisagem sem se preocupar</p>
-    
+                <p>ONossos fotógrafos estão acostumados a registrar os melhores momentos das viagens para que você
+                    aproveite e paisagem sem se preocupar</p>
+
                 <button>Saiba mais</button>
-    
+
             </div>
-    
+
             <div class="tour">
                 <i data-feather="navigation"></i>
-    
+
                 <h2>Aluguel de veículo</h2>
-                <p>Para os clientes que preferem explorar o ambiente sozinhos e curtem a liberdade, oferecemos o serviço de aluguel de veículos com preços super em conta</p>
-    
+                <p>Para os clientes que preferem explorar o ambiente sozinhos e curtem a liberdade, oferecemos o serviço
+                    de aluguel de veículos com preços super em conta</p>
+
                 <button>Saiba mais</button>
-    
+
             </div>
         </div>
     </section>
 
+    <section class="contato">
+        <div class="entre-em-contato">
+            <h1>Entre em contato</h1>
+
+            <ul>
+                <li>
+                    <i data-feather="coffee"></i>Rua São Jose - 999
+                </li>
+                <li>
+                    <i data-feather="coffee"></i>agenciadeviagens@viagens.com
+                </li>
+                <li>
+                    <i data-feather="coffee"></i>(99) 9.9999-9999
+                </li>
+            </ul>
+        </div>
+
+        <div id="mapid"></div>
+    </section>
+
+
     <script>
         feather.replace()
-      </script>
+
+        var map = L.map('mapid').setView([51.505, -0.09], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([51.5, -0.09]).addTo(map)
+            .bindPopup('Agência de Viagens')
+            .openPopup();
+    </script>
 </body>
 
 </html>
