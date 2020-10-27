@@ -5,5 +5,10 @@
 ## Link da [Playlist](https://www.youtube.com/watch?v=kpn2SSYNsR8&list=PLOUrDmh7c7mVzTETBVBerrMawaLd-4RMs)
 
 
-## 
+## Mobile
 
+![](./public/img/mobile.gif)
+
+## Desktop
+
+![](./public/img/desktop.gif)
