@@ -24,16 +24,16 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav>
             <!-- <img src="" alt="Logo Agência de Viagens"> -->
 
             <h1>Agência de Viagens</h1>
             <ul>
-                <li>Home</li>
-                <li>Pacotes</li>
-                <li>Serviços</li>
-                <li>Contato</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Pacotes">Pacotes</a></li>
+                <li><a href="#Serviços">Serviços</a></li>
+                <li><a href="#Contato">Contato</a></li>
             </ul>
         </nav>
 
@@ -46,7 +46,7 @@
         </div>
     </header>
 
-    <section class="pacote">
+    <section id="Pacotes" class="pacote">
 
         <h1>Conheça nossos pacotes</h1>
 
@@ -127,7 +127,7 @@
 
     </section>
 
-    <section class="serviços">
+    <section id="Serviços" class="serviços">
 
         <h1>Serviços</h1>
         <div class="serviçõs-elementos">
@@ -166,7 +166,7 @@
         </div>
     </section>
 
-    <section class="contato">
+    <section id="Contato" class="contato">
         <div class="entre-em-contato">
             <h1>Entre em contato</h1>
 
@@ -190,13 +190,13 @@
     <script>
         feather.replace()
 
-        var map = L.map('mapid').setView([51.505, -0.09], 13);
+        var map = L.map('mapid').setView([-8.1411469, -34.9040972], 13);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        L.marker([51.5, -0.09]).addTo(map)
+        L.marker([-8.1411469, -34.9040972]).addTo(map)
             .bindPopup('Agência de Viagens')
             .openPopup();
     </script>

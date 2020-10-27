@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     height: calc(100vh - 150px);
     /* Obs -  */
@@ -49,6 +53,11 @@ header li {
     color: white;
 
     font-weight: bold;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
 }
 
 .header-content {
@@ -318,7 +327,7 @@ header li {
         z-index: 99;
     }
 
-    header nav li {
+    header nav li a{
         color: black;
     }
 
@@ -347,6 +356,8 @@ header li {
         width: 100%;
 
         z-index: 99;
+
+        margin-bottom: 25px;
     }
 
 
@@ -369,7 +380,7 @@ header li {
         z-index: 100;
     }
 
-    header nav li {
+    header nav li a {
         color: black;
     }
 
@@ -417,6 +428,7 @@ header li {
         width: 100%;
 
         z-index: 99;
+        margin-bottom: 25px;
     }
 }
 
@@ -452,11 +464,5 @@ header li {
 
     .entre-em-contato {
         font-size: .7rem;
-    }
-}
-
-@media (max-width: 1400px) {
-    .tour {
-        margin: 0 40px;
     }
 }
