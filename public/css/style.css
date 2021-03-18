@@ -24,7 +24,7 @@ html {
 header {
     height: calc(100vh - 150px);
     /* Obs -  */
-    background: no-repeat center/cover url('/public/img/bg.jpg');
+    background: no-repeat center/cover url('./public/img/bg.jpg');
 }
 
 header nav {
