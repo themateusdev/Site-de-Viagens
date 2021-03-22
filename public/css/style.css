@@ -24,7 +24,7 @@ html {
 header {
     height: calc(100vh - 150px);
     /* Obs -  */
-    background: no-repeat center/cover url('./public/img/bg.jpg');
+    background: no-repeat center/cover url('https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg?cs=srgb&dl=pexels-pixabay-301614.jpg&fm=jpg');
 }
 
 header nav {
