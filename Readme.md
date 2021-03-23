@@ -1,7 +1,3 @@
-# Projeto Site de Viagens 
-##
-
-## Projeto do canal [Papo de Dev](https://www.youtube.com/channel/UCRhKK6VrISnIWPJjYxBPKnA)
 
 ## Mobile
 
